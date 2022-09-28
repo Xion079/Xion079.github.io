@@ -1,0 +1,29 @@
+<!doctype  html>  <!--  index.html -->             
+<html><head> 
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <title>웹서버응용 과제 리스트</title>
+  <style>
+  a:link {color:blue; text-decoration:none;} a:visited { color:purple; text-decoration:none;}
+  a:hover { text-decoration:underline;} a:active {color:red; text-decoration:none;}
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+<body>
+  <h1>고영민 JSP</h3>
+ <section>
+  <ul><hr/>
+   <li id="week01">1주차 과제
+   <ol type ="1">
+    <li><a href="https://Xion079.github.io/webserver/index.html"target="_blank">1-1</a></li>
+   </ol>
+   <li id="week03">3주차 과제
+   <ol type ="3">
+    <li><a href="https://Xion079.github.io/webserver/week3/formText1.html"target="_blank">3-1 formtext</a></li>
+    <li><a href="https://Xion079.github.io/webserver/week3/formRadio1.html"target="_blank">3-2 formRadio</a></li>
+    <li><a href="https://Xion079.github.io/webserver/week3/formCheckbox1.html"target="_blank">3-3 formCheckbox</a></li>
+    <li><a href="https://Xion079.github.io/webserver/week3/homework.html"target="_blank">3-4 homework</a></li>
+   </ol></hr>
+  </ul>
+ </section>
+</body>
+</html>
