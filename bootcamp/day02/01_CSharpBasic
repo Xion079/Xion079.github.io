@@ -1,0 +1,10 @@
+using System;   //namespace
+
+class CSharpBasic    //클래스  
+{
+    static void Main()  //메인함수
+    {
+        Console.WriteLine("Hello world");
+        Console.WriteLine("좋은 아침입니다.");
+    }
+}
