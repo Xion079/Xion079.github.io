@@ -1,0 +1,24 @@
+using System;
+
+class FromInput
+{
+    static void Main()
+    {
+
+
+        //Console.WriteLine("이름을 입력하세요");
+        //string name = Console.ReadLine();
+        //Console.WriteLine($"입력하신 이름은 {name}입니다.");
+
+        Console.Write("이름을 입력하세요:____\b\b\b\b");    //write뒤에 line의 뜻은 \n임
+        string name = Console.ReadLine();
+        Console.WriteLine($"안녕하세요 {name}님.");
+
+        Console.Write("문자를 입력하세요:__\b\b");
+        int x = Console.Read();                              //read뒤에 line을 빼면 아스키코드값으로 바뀜 그래서 숫자로 나오니까 string이 아니고 int를 씀
+        Console.WriteLine(x);
+
+
+
+    }
+}
