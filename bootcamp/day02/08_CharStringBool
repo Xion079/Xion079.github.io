@@ -1,0 +1,30 @@
+using System;
+
+//값형식
+class CharStringBool
+{
+    static void Main()
+    {
+        //char
+        char score = 'A';
+        string scoreStr = "A";
+
+        char score2 = '수';
+        Console.WriteLine($"Score = {score}");
+        Console.WriteLine($"Score2 = {score2}");
+        Console.WriteLine($"char score = {(int)score}");
+        //Console.WriteLine($"string score = {(int)scoreStr}");
+
+        //string
+        string greeting = "Hello world"; //문자열, 참조형식
+        string greeting_ko = "안녕하세요, 홍길동님 좋은 아침";
+        Console.WriteLine($"{greeting}\n{greeting_ko}");
+
+        //bool
+        bool answer = true;
+        string answerString = "True";
+        Console.WriteLine(answer);
+        Console.WriteLine(answerString);
+
+    }
+}
