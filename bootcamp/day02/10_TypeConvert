@@ -1,0 +1,39 @@
+class TypeConvert
+{
+    static void Main()
+    {
+        //int a = 123456;
+        //long b = a;         //long이 int보다 범위가 넓긴때문에 implicit type change 자동으로 바뀜
+        //byte c = (byte)a;   // explicit type change 바이트가 더 작아서 담을수 없는데 강제로 담음 인트는 4바이트니까 64가나옴 앞에서 끊음 그냥
+
+        //Console.WriteLine($"a type = {a.GetType()}");
+        //Console.WriteLine($"b type = {b.GetType()}");
+        //Console.WriteLine($"c type = {c.GetType()}, c = {c}");
+
+        //Console.WriteLine("================================================");
+        //char ch = 'c';
+        //Console.WriteLine(ch);
+        //Console.WriteLine(ch.GetType()); //c의 타입을 알려달라는 뜻임
+
+        //Console.WriteLine("==================================================");
+        //Console.WriteLine("숫자를 입력하세요");
+        //String inputNumber = Console.ReadLine();
+        //Console.WriteLine($"{inputNumber + 10}");   // 10이 안 더해짐 10을 문자열로 받기때문
+
+        //Console.WriteLine("==================================================");
+        //Console.WriteLine("숫자를 입력하세요");
+        //String inputNumber = Console.ReadLine();        //30
+        //int inputInt = Convert.ToInt32(inputNumber);    //inputNumber에 입력된 문자 30을 숫자 30으로 바꿔줌 Convert가 명령어임
+        //Console.WriteLine($"{inputInt + 10}");
+
+
+        Console.WriteLine("원의 반지름을 입력하세요 (cm)");
+        String r = Console.ReadLine();
+        double half = Convert.ToDouble(r);
+        Console.WriteLine($"반지름:\t{r}");
+        Console.WriteLine($"원의 넓이는:\t{3.14 * half * half}cm^2");
+
+
+
+    }
+}
