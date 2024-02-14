@@ -1,0 +1,23 @@
+using System;
+
+
+class Program
+{
+    static void Main()
+    {
+        //변수 선언 + 할당 가능 
+        int a, b, c;
+        a = b = c = 100;
+        //ex) int a = 100, b = 200;
+        string name = "장미";
+
+        ////변수 할당
+        a = 100;
+        b = 200;
+
+        //변수 참조
+        Console.WriteLine($"a = {a},b = {b}");
+        Console.WriteLine($"a + b = {a + b}");
+        Console.WriteLine(name);
+    }
+}
