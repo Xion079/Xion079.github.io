@@ -1,0 +1,16 @@
+using System;
+
+class VarType
+{
+    static void Main()
+    {
+        var age = 23;
+        Console.WriteLine($"age type= {age.GetType()}");
+
+        var temperature = 10.5f;
+        Console.WriteLine($"temperture type = {temperature.GetType()}");
+
+        var weather = "맑음";
+        Console.WriteLine($"weather type = {weather.GetType()}");
+    }
+}
