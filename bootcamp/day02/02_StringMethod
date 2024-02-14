@@ -1,0 +1,24 @@
+using System;
+
+class StringMethod
+{
+    static void Main(string[] args)
+    {
+        //화면에 프린트 하는 함수
+        //Console.WriteLine("Hello. Unity");
+        //Console.WriteLine("Hello. C#");
+
+        //Console.WriteLine("==================================");
+        //특수 문자
+        //Console.WriteLine("Hello \nUnity");
+        //Console.WriteLine("Hello \tUnity");
+        //Console.WriteLine("C:\\User\\GYM"); //정규식
+        Console.WriteLine(@"C:\User\GYM");
+
+        //Console.WriteLine("==================================");
+
+        Console.WriteLine("C#\tunity 개발언어\nVSCODE\tC# 개발환경\nUnity: 게임개발엔진");
+
+
+    }
+}
