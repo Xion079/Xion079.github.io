@@ -1,0 +1,14 @@
+using System;
+
+class CircleArea
+{
+    static void Main()
+    {
+        Console.WriteLine("원의 반지름을 입력하세요: ");
+        string input = Console.ReadLine();
+        float r = Convert.ToSingle(input);  //변수input의 문자를 double로 숫자로 바꾸고 소수점이니까 다시 float으로 변환한거임
+        Console.WriteLine($"반지름 : {r}");
+        double circleArea = 3.14f * r * r;
+        Console.WriteLine($"원의 넓이는 : {circleArea:0.00}cm^2"); //0.00소수점 둘째짜리까지만 나오라는뜻
+    }
+}
