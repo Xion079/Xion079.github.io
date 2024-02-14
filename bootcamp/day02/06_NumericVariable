@@ -1,0 +1,32 @@
+using System;
+
+class NumericVariable
+{
+    static void Main()
+    {
+        int a = 256; // int는 4byte 
+        byte b = 255; // byte는 255가 최대치 0 ~ 255
+        short c = 256; // short는 2byte 
+        long d = 2555555555555555555;
+
+        Console.WriteLine($"int a = {a}");
+        Console.WriteLine($"byte b = {b}");
+        Console.WriteLine($"long d = {d}");
+
+        Console.WriteLine($"max int = {Int32.MaxValue}");
+        Console.WriteLine($"max int = {Int32.MinValue}");
+
+        Console.WriteLine($"short int = {short.MaxValue}");
+        Console.WriteLine($"short int = {short.MinValue}");
+
+        Console.WriteLine($"max int = {long.MaxValue}");
+        Console.WriteLine($"max int = {long.MinValue}");
+
+        int signedbyteMin = sbyte.MinValue;
+        int signedbyteMax = sbyte.MaxValue;
+
+        Console.WriteLine("signed byte min = {0}, signed byte max = {1}", signedbyteMin, signedbyteMax);
+
+    }
+
+}
