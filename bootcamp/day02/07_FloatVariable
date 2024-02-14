@@ -1,0 +1,25 @@
+using System;
+
+class FloatVariable
+{
+    static void Main()
+    {
+        float floatValue = 3.141592f;       //부동소수점
+        double dobuleValue = 3.141592;      //부동소수점
+        decimal decimalValue = 3.141592m;   //고정소수점
+        //decimal은 뒤에 m을 붙여야함 float에 f 붙이는거 마냥
+
+        Console.WriteLine($"float value = {floatValue}");
+        Console.WriteLine($"dobule value = {dobuleValue}");
+        Console.WriteLine($"decimal value = {decimalValue}");
+
+        double f1 = 0.1;
+        double f2 = 0.2;
+        Console.WriteLine($"f1 + f2 = {f1 + f2}");
+        //아주 조금의 에러가 있음 평소에는 의미가 없으나 숫자가 커지면 의미가 생김
+
+        decimal f3 = 0.1m;
+        decimal f4 = 0.2m;
+        Console.WriteLine($"f3 + f4 = {f3 + f4}");
+        //그래서 decimal을 씀
+    }
