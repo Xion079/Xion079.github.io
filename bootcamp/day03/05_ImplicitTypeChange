@@ -1,0 +1,21 @@
+using System;
+
+class ImplicitTypeChange
+{
+    static void Main()
+    {
+        int a = 3, b = 2;
+        float c = 3f, d = 2f;
+        short s = 536;
+        byte t = 12;
+
+        //short sum = s + t; //short 형식은 에러남 int로 바뀜 속편하게
+        var sum = s + t; //이렇게 var쓰는게 속편함
+
+        Console.WriteLine(a / b);
+        Console.WriteLine(c / d);
+        Console.WriteLine(c / b);
+        //Console.WriteLine((s + t).GetType());
+
+    }
+}
