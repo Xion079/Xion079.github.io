@@ -1,0 +1,24 @@
+using System;
+
+//비교(관계)연산자 >, <, >=, <=, == , !=
+
+class Comparison
+{
+    static void Main()
+    {
+        int a = 10;
+        int b = 20;
+
+        bool comparison = a > b;       //거짓이므로 결과 값이 false로 나옴
+        Console.WriteLine($"a > b ? {comparison}");
+        Console.WriteLine($"a > b ? {a > b}");
+        Console.WriteLine($"a >= b ? {a >= b}");
+        Console.WriteLine($"a < b ? {a < b}");
+        Console.WriteLine($"a <= b ? {a <= b}");
+        Console.WriteLine($"a == b ? {a == b}");    //and
+        Console.WriteLine($"a != b ? {a != b}");    //둘의 값이 다른가?
+
+        Console.WriteLine($"a = b : {a = b}");  //대입 연산자
+
+    }
+}
