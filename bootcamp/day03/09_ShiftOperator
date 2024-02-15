@@ -1,0 +1,28 @@
+using System;
+
+class ShiftOperator
+{
+    static void Main()
+    {
+        //int number = 0b0010; // 2
+        //Console.WriteLine($"{Convert.ToString(number << 1, 2)} => {number << 1}");
+        //Console.WriteLine($"{Convert.ToString(number << 2, 2)} => {number << 2}");
+        //Console.WriteLine($"{Convert.ToString(number << 3, 2)} => {number << 3}");
+        //Console.WriteLine($"{Convert.ToString(number << 4, 2)} => {number << 4}");
+
+        byte num = 4; // 00000100
+        num &= 5;     // 00000101
+        num |= 5;     // 00000101
+        num ^= 5;     // 00000101
+        num <<= 1;    // 00000101
+        num >>= 1;    // 00000101
+
+        Console.WriteLine($"{Convert.ToString(num &= 5, 2)} => {num}");
+        Console.WriteLine($"{Convert.ToString(num |= 5, 2)} => {num}");
+        Console.WriteLine($"{Convert.ToString(num ^= 5, 2)} => {num}");
+        Console.WriteLine($"{Convert.ToString(num <<= 5, 2)} => {num}");
+        Console.WriteLine($"{Convert.ToString(num >>= 5, 2)} => {num}");
+
+    }
+
+}
