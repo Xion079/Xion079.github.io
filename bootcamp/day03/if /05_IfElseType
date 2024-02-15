@@ -1,0 +1,46 @@
+using System;
+
+class IfElseType
+{
+    static void Main()
+    {
+        //const double pi = 3.15;
+        ////pi = 3.14;  const 죽어도 이거는 다른걸로 못바꿔! 그래서 pi에 빨간불 들어옴
+
+
+        //if (pi == 3.14)
+        //{
+        //    Console.WriteLine("pi는 3.14");
+        //}
+
+        //else
+        //{
+        //    Console.WriteLine("pi는 3.14가 아님");
+        //}
+
+        //Console.WriteLine("프로그램 종료");
+
+
+        Console.WriteLine("첫 번째 숫자를 입력하세요:");
+        int first = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("두 번째 숫자를 입력하세요:");
+        int second = Convert.ToInt32(Console.ReadLine());
+
+
+        if (first > second)
+        {
+            int num1 = second - first;
+            int f1 = (num1 >= 0) ? num1 : num1 * -1;
+            Console.WriteLine($"두 값의 차이는 {f1}입니다.");
+        }
+
+        else
+        {
+            int num2 = first - second;
+            int f2 = (num2 >= 0) ? num2 : num2 * -1;
+            Console.WriteLine($"두 값의 차이는 {f2}입니다.");
+        }
+
+    }
+}
