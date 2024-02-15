@@ -1,0 +1,23 @@
+using System;
+
+class TrigonalExam
+{
+    static void Main()
+    {
+        //Console.WriteLine("놀이기구 키제한 130cm");
+        //Console.WriteLine("키를 입력하세요(cm):___\b\b\b"); // ___\b\b\b 이거 몰랏음
+        //int tall = Convert.ToInt32(Console.ReadLine());
+
+        //string cutline = (tall>130) ? "탑승 가능" : "보호자 동반";
+        //Console.WriteLine($"입력하신 키는 {tall}cm입니다.");
+        //Console.WriteLine(cutline);
+
+        Console.WriteLine("숫자를 입력하세요");
+        int num = Convert.ToInt32(Console.ReadLine());
+        int num2 = (num > 0) ? num : num * -1;
+
+        Console.WriteLine($"{num}의 절댓값: {num2}");
+
+
+    }
+}
