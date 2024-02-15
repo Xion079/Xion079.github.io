@@ -1,0 +1,26 @@
+using System;
+
+class IfElse
+{
+    static void Main()
+    {
+        int score = 55;
+
+        if (score >= 60)
+        {
+            Console.WriteLine("성공");
+        }
+
+        //if(score < 60)
+        else
+        {
+            Console.WriteLine("실패");
+        }
+
+        Console.WriteLine("프로그램 종료");
+
+
+
+
+    }
+}
