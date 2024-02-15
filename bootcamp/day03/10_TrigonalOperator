@@ -1,0 +1,18 @@
+using System;
+using System.ComponentModel;
+
+class TrigonalOperator
+{
+    static void Main()
+    {
+        string right = "정답", wrong = "오답";
+        bool value;
+
+        value = true;
+        string answer = value ? right : wrong;
+        //// (? a : b;) ?앞에 조건이 참이면 a 거짓이면 b가 나옴
+
+        Console.WriteLine($"{value}, {answer}");
+
+    }
+}
