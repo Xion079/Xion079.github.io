@@ -1,0 +1,42 @@
+using System;
+
+//할당 연산자, +=, -=, *= , /=, %= 같이 생김
+
+class Assignment
+{
+    static void Main()
+    {
+        //int a = 10;
+        //int b = 20;
+        //int c = 30;
+        //int d = 31;
+        //int e = 32;
+
+        //a += 10;
+        //b -= 10;
+        //c *= 2;
+        //d /= 3;
+        //e %= 3;
+
+        //Console.WriteLine($"a = {a}");
+        //Console.WriteLine($"b = {b}");
+        //Console.WriteLine($"c = {c}");
+        //Console.WriteLine($"d = {d}");
+        //Console.WriteLine($"e = {e}");
+
+        //swap
+        int i = 10;
+        int j = 20;
+
+        //int temp;
+        //temp = 0;
+        //temp = i;
+        //i = j; j = temp;
+        //그냥 변수 하나 더 넣어서 i랑 j랑 바뀌는거 도와준거임
+        (i, j) = (j, i);  //위에거를 이렇게 타나낼수있음
+
+
+        Console.WriteLine($"i = {i}, j = {j}");
+
+    }
+}
