@@ -1,0 +1,39 @@
+using System;
+using System.Net.WebSockets;
+
+class LogicalOperator
+{
+    static void Main()
+    {
+        //bool a = true;
+        //bool b = false;
+
+        //bool abAND = a && b;
+        //Console.WriteLine(abAND); //하나는 ture 하나는 false라 and가 아니여서 false
+
+        //bool abOR = a || b;
+        //Console.WriteLine(abOR); //true,false라 or적용되서 트루
+
+        //bool abXOR = a ^ b;
+        //Console.WriteLine(abXOR); //or랑 마찬가지임 근데 얘는 둘다 같으면 false나옴
+
+        Console.WriteLine("a 값을 입력하세요:");
+        //string? a1 = Console.ReadLine();
+        int a = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("b 값을 입력하세요:");
+       // string? b1 = Console.ReadLine();
+        int b = Convert.ToInt32(Console.ReadLine());
+
+       // bool OperationValue = (a != 100) || (b != 200);
+       // bool OperationValue = !(a == 100) || !(b == 200);
+        bool OperationValue = !((a == 100) && (b == 200));
+        //셋다 같은 말임 근데 연산은 마지막이 빠름
+
+
+        Console.WriteLine(OperationValue);
+
+
+
+    }
+}
