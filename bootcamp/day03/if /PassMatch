@@ -1,0 +1,19 @@
+using System;
+
+class PassMatch
+{
+    static void Main()
+    {
+        Console.Write("패스워드 4자리를 입력하세요:____\b\b\b\b");
+        int pw = Convert.ToInt32(Console.ReadLine());
+
+        if (pw == 1234)
+        {
+            Console.WriteLine("로그인이 완료되었습니다.");
+        }
+
+
+        Console.WriteLine("**************************");
+        Console.WriteLine("프로그램을 종료합니다");
+    }
+}
