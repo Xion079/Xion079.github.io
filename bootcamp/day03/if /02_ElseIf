@@ -1,0 +1,31 @@
+using System;
+
+class ElseIf
+{
+    static void Main()
+    {
+        Console.WriteLine("프로그램 시작");
+        int x = 140;
+
+        if (x >= 130)      // if (조건) {내용} //조건이 참이면 괄호안에 내용시작 
+        {
+            Console.WriteLine("조건문 실행");
+            Console.WriteLine("탑승 가능");
+        }
+
+        if (x >= 110)
+        {
+            Console.WriteLine("[0] 조건문 실행");
+        }
+        if (x >= 120)
+        {
+            Console.WriteLine("[1] 조건문 실행");
+        }
+        if (x >= 130)
+        {
+            Console.WriteLine("[3] 조건문 실행");
+        }
+        //세 조건 다 참이기 때문에 세개가 다 실행됨
+
+    }
+}
