@@ -1,0 +1,19 @@
+using System;
+
+//증감 연산자 ++ , -- 같은거 
+
+class IncDec
+{
+    static void Main()
+    {
+        int a = 10;
+        //++a;
+        Console.WriteLine($"a = {a}");
+        Console.WriteLine($"++a = {++a}");        //전위 증강
+        Console.WriteLine($"a++ = {a++}");        //후위 증강
+        Console.WriteLine($"a-- = {a--}");
+        Console.WriteLine($"--a = {--a}");
+        Console.WriteLine($"a = {a}");
+
+    }
+}
