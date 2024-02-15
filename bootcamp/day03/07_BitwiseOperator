@@ -1,0 +1,30 @@
+using System;
+
+// &, |, ^ ,~      bitwise 연산자임 4개
+
+class BitwiseOperator
+{
+    static void Main()
+    {
+        //byte x = 10;    //1010
+        //byte y = 12;    //1100
+
+        //Console.WriteLine($"Binary{Convert.ToString(x, 2)} = > {x}");
+        ////2진수로 바꾸라는거임 tostring(x,2)에 2가 아무것도 안쓰면 10진수로된다함
+        //Console.WriteLine($"Binary{Convert.ToString(y, 2)} = > {y}");
+
+
+        byte x = 0b1010;  //앞에 0b를 붙이면 2인수로 인식함 그러니까 1010이아니라 10으로 인식한다는거임
+        byte y = 0b1100;
+        Console.WriteLine($"Binary{Convert.ToString(x, 2)} = > {x}");
+        Console.WriteLine($"Binary{Convert.ToString(y, 2)} = > {y}");
+        Console.WriteLine($"AND {Convert.ToString(x & y, 2)} = > {x & y}");
+        //and연산자라 1010, 1100에서 겹치는거만해가지고 1000이됨 그게 8의 이진수임 그래서 8이나옴
+        Console.WriteLine($"OR {Convert.ToString(x | y, 2)} = > {x | y}");
+        Console.WriteLine($"XOR {Convert.ToString(x ^ y, 2)} = > {x ^ y}");
+        Console.WriteLine($"NOT X {Convert.ToString((byte)~x, 2)} = > {~x}");
+
+
+    } 
+  
+}
