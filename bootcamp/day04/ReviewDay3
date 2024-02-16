@@ -1,0 +1,70 @@
+using System;
+using System.Threading.Channels;
+
+class IfElseReview
+{
+    static void Main()
+    {
+        //int score = 70;
+
+        //string retString = (score >= 60) ? "성공" : "실패";
+
+        ////if (score >= 60)
+        ////{
+        ////    Console.WriteLine("성공");
+        ////}
+
+        ////if (score < 60)
+        ////{
+        ////    Console.WriteLine("실패");
+        ////}
+        ////else
+        ////{
+        ////    Console.WriteLine("실패");
+        ////}
+
+        //    Console.Write("키를 입력하세요:___\b\b\b");
+        //    //int height = Convert.ToInt32(Console.ReadLine());
+        //    bool retValue = int.TryParse(Console.ReadLine(), out int value);
+        //    //int값 그러니까 정수면 true 정수가 아니면 false가 나오는 명령어임
+
+        //    if(retValue)
+        //    {
+        //        if (value >= 130)
+        //        {
+        //            Console.WriteLine("탑승가능");
+        //        }
+
+        //        else
+        //        {
+        //            Console.WriteLine("탑승 불가");
+        //        }
+        //    }
+
+        //    Console.WriteLine("프로그램 종료");
+
+
+
+        Console.Write("키를 입력해주세요:___\b\b\b");
+        //bool value = int.TryParse(Console.ReadLine(), out int tall);
+
+        if (int.TryParse(Console.ReadLine(), out int tall))
+            //이런식으로 가능함 이게더 좋으니까 이걸로 기억하자
+        {
+            if(tall>130)
+            {
+                Console.WriteLine("탑승가능"); 
+            }
+
+            else 
+            { 
+                Console.WriteLine("탑승불가"); 
+            }
+        }
+        else
+        {
+            Console.WriteLine("정수로 입력해주세요");
+        }
+        Console.WriteLine("프로그램 종료");
+    }
+}
