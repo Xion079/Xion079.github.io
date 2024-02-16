@@ -1,0 +1,47 @@
+using System;
+using System.ComponentModel.Design;
+
+class ScoreTest2
+{
+    static void Main()
+    {
+        Console.Write("점수를 입력해주세요:___\b\b\b");
+
+        if (int.TryParse(Console.ReadLine(), out int score))
+        {
+            if(score >= 100)
+            {
+                Console.WriteLine("만점입니다");
+            }
+
+            else if (score >= 90)
+            {
+                Console.WriteLine("수");
+            }
+
+            else if (score >= 80)
+            {
+                Console.WriteLine("우");
+            }
+
+            else if (score >= 70)
+            {
+                Console.WriteLine("미");
+            }
+
+            else if (score >= 60)
+            {
+                Console.WriteLine("양");
+            }
+
+            else if (score >= 50)
+            {
+                Console.WriteLine("가");
+            }
+        }
+        else
+        {
+            Console.WriteLine("정수로 입력해주세요");
+        }
+    }
+}
