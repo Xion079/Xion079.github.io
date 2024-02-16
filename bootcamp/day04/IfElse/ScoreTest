@@ -1,0 +1,35 @@
+using System;
+
+class ScoreTest
+{
+    static void Main()
+    {
+        //Console.Write("점수를 입력하세요:___\b\b\b");
+        //bool score1 = int.TryParse(Console.ReadLine(), out int score);
+        //Console.WriteLine(score);
+        //if (int.TryParse(Console.ReadLine(), out int score))
+
+        int score = 80;
+
+        if (score >= 90)
+        {
+            Console.WriteLine("금메달");
+        }
+        else if (score >= 80)
+        {
+            Console.WriteLine("은메달");
+        }
+        else if (score >= 80)
+        {
+            Console.WriteLine("은메달");
+        }
+        else if (score >= 80)
+        {
+            Console.WriteLine("은메달");
+        }
+        else
+        {
+            Console.WriteLine("메달이 없습니다.");
+        }
+    }
+}
