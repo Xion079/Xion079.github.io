@@ -1,0 +1,44 @@
+using System;
+using System.Runtime;
+
+class Switch
+{
+    static void Main()
+    {
+        string title = "Python";
+
+        switch (title)
+        {
+            case "C#":
+                Console.WriteLine("유니티 지원");
+                break;
+
+            case "Python":
+                Console.WriteLine("인공 지능 지원");
+                break;
+
+            default:
+                Console.WriteLine("미 지원 프로그램");
+                break;
+        }
+
+
+
+        //if(title == "C#")
+        //{
+        //    Console.WriteLine("유니티 지원");
+        //}
+
+        //else if(title == "Python")
+        //{
+        //    Console.WriteLine("인공지능 지원");
+        //}
+
+        //else
+        //{
+        //    Console.WriteLine("유니티 미지원");
+        //}
+
+
+    }
+}
