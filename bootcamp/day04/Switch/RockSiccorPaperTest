@@ -1,0 +1,80 @@
+using System;
+
+class RockPaperScissorTest
+{
+    static void Main()
+    {
+        string[] events = { "가위", "바위", "보" };   // array
+        Random random = new Random();
+        int cpuchoice = random.Next(3); //0,1,2 총 세개가 나옴
+
+
+        System.Console.WriteLine("가위[0], 바위[1], 보[2] 중 하나를 선택하여 입력해주세요");
+        int rcp = Convert.ToInt32(Console.ReadLine());
+        bool choice = (rcp >= 0 == rcp < 3);
+
+
+        if(choice)
+        {
+            if(cpuchoice == 0)
+            {
+                if (rcp == 0)
+                {
+                    Console.WriteLine($"컴퓨터 = 가위, 당신 = 가위");
+                    Console.WriteLine("무승부");
+                }
+                else if(rcp == 1)
+                {
+                    Console.WriteLine($"컴퓨터 = 가위, 당신 = 바위");
+                    Console.WriteLine("승리");
+                }
+                else
+                {
+                    Console.WriteLine($"컴퓨터 = 가위, 당신 = 보");
+                    Console.WriteLine("패배");
+                }
+            }
+            else if (cpuchoice == 1)
+            {
+                if (rcp == 0)
+                {
+                    Console.WriteLine($"컴퓨터 = 바위, 당신 = 가위");
+                    Console.WriteLine("패배");
+                }
+                else if (rcp == 1)
+                {
+                    Console.WriteLine($"컴퓨터 = 바위, 당신 = 바위");
+                    Console.WriteLine("무승부");
+                }
+                else
+                {
+                    Console.WriteLine($"컴퓨터 = 바위, 당신 = 보");
+                    Console.WriteLine("승리");
+                }
+            }
+            if (cpuchoice == 2)
+            {
+                if (rcp == 0)
+                {
+                    Console.WriteLine($"컴퓨터 = 보, 당신 = 가위");
+                    Console.WriteLine("승리");
+                }
+                else if (rcp == 1)
+                {
+                    Console.WriteLine($"컴퓨터 = 보, 당신 = 바위");
+                    Console.WriteLine("패배");
+                }
+                else
+                {
+                    Console.WriteLine($"컴퓨터 = 보, 당신 = 보");
+                    Console.WriteLine("무승부");
+                }
+            }
+        }
+        else
+        {
+            Console.WriteLine("잘못된 선택입니다 보기중에 선택해주세요");
+        }
+        Console.WriteLine("프로그램 종료");
+    }
+}
