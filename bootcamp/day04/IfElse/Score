@@ -1,0 +1,39 @@
+using System;
+
+class Score
+{
+    static void Main()      //if문 중첩
+    {
+        int score = 71;
+
+        if(score >= 90)
+        {
+            Console.WriteLine("A학점입니다.");
+
+        }
+
+        else
+        {
+
+            if (score >= 80)
+            {
+                Console.WriteLine("B학점입니다.");
+            }
+
+            else
+            {
+                if (score >= 70)
+                {
+                    Console.WriteLine("C학점입니다.");
+                }
+
+                else
+                {
+                    Console.WriteLine("F학점입니다.");
+                }
+
+            }
+        }
+        Console.WriteLine("프로그램 종료.");
+    }
+}
