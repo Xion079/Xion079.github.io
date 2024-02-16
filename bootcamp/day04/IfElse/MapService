@@ -1,0 +1,38 @@
+using Microsoft.VisualBasic.FileIO;
+using System;
+
+class MapService
+{
+    static void Main()
+    {
+        Console.Write("과목을 입력하세요:__\b\b");
+        string? subject = Console.ReadLine();
+        Console.Write("점수를 입력하세요:___\b\b");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        if (subject == "수학")
+        {
+            if (num >= 60)
+            {
+                Console.WriteLine("참 잘했어요");
+            }
+            else
+            {
+                Console.WriteLine("좀 더 분발해봐요");
+            }
+        }
+
+        else
+        {
+            if (num >= 80)
+            {
+                Console.WriteLine("참 잘했어요");
+            }
+            else
+            {
+                Console.WriteLine("좀 더 분발해봐요");
+            }
+        }
+        Console.WriteLine("프로그램 종료");
+    }
+}
