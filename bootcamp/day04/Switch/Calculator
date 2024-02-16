@@ -1,0 +1,51 @@
+using System;
+
+class Calculator
+{
+    static void Main()
+    {
+        Console.Write("첫번째 값을 입력하세요:___\b\b\b");
+        int firstnum=Convert.ToInt32(Console.ReadLine());
+        Console.Write("두번째 값을 입력하세요:___\b\b\b");
+        int secondnum = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("연산자를 입력하세요:+, -, *, /");
+        string? cal = Console.ReadLine();
+
+        switch(cal)
+        {
+            case "+":
+                { 
+                    Console.WriteLine($"{firstnum} + {secondnum} = {firstnum + secondnum}"); 
+                }
+                break;
+
+            case "-":
+                {
+                    Console.WriteLine($"{firstnum} - {secondnum} = {firstnum - secondnum}");
+                }
+                break;
+
+            case "*":
+                {
+                    Console.WriteLine($"{firstnum} * {secondnum} = {firstnum * secondnum}");
+                }
+                break;
+
+            case "/":
+                {
+                    Console.WriteLine($"{firstnum} / {secondnum} = {firstnum / secondnum}");
+                }
+                break;
+
+            default:
+                {
+                    Console.WriteLine("인식되지않은 연산자입니다.");
+                }
+                break;
+
+
+                ////default:
+                //break;        이런식으로 값을 넣지않아도 됨 그러니까 써줘
+        }
+    }
+}
