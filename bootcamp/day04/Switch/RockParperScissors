@@ -1,0 +1,50 @@
+using System;
+
+class RockParperScissors
+{
+    static void Main()
+    {
+        //System.Console.WriteLine("가위 [0], 바위[1], 보[2]: 원하는 숫자를 입력해주세요");
+        //int num = Convert.ToInt32(Console.ReadLine());
+
+        //switch(num)
+        //{
+        //    case 0:
+        //        Console.WriteLine("가위");
+        //        break;
+        //    case 1:
+        //        Console.WriteLine("바위");
+        //        break;
+        //    case 2:
+        //        Console.WriteLine("보");
+        //        break;
+        //    default:
+        //        Console.WriteLine("잘못된 선택입니다.");
+        //        break;
+
+        //}
+
+        Console.WriteLine("좋아하는 프로그램 언어를 선택하세요:");
+        Console.WriteLine("1.C#, 2.C++ 3.Java 4.Python");
+        int choice=Convert.ToInt32(Console.ReadLine());
+
+        switch (choice)
+        {
+            case 1: 
+                Console.WriteLine("선택하신 프로그램은 C#입니다.");
+                break;
+            case 2:
+                Console.WriteLine("선택하신 프로그램은 C++입니다.");
+                break;
+            case 3:
+                Console.WriteLine("선택하신 프로그램은 Java입니다.");
+                break;
+            case 4:
+                Console.WriteLine("선택하신 프로그램은 Python입니다.");
+                break;
+            default:
+                Console.WriteLine("보기에 없는 답안입니다.");
+                break;
+        }
+    }
+}
