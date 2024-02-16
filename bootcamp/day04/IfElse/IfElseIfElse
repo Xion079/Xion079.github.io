@@ -1,0 +1,33 @@
+using System;
+
+class IfElseIfElse
+{
+    static void Main()
+    {
+        //nested if
+        string language = "C#";
+        int version = 12;
+
+        //if (language == "C#")
+        if (language == "C#" && version >= 10)  //(중첩 구문) 언어가 c#이고 버전도 10이상인것
+        
+            //if (version >= 10)
+            //{
+            //    Console.WriteLine("유니티가 지원하는 버전입니다.");
+            //}
+
+                //else
+                //{
+                //    Console.WriteLine("지원하지 않는 버전입니다.");
+                //}
+
+                //Console.WriteLine("유니티가 지원하는 버전입니다.");
+
+
+        else
+            {
+                Console.WriteLine("지원하지 않는 언어입니다.");
+            }
+
+        }
+    }
