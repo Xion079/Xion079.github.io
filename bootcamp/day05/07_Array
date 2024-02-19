@@ -1,0 +1,26 @@
+using System;
+
+class Array
+{
+    static void Main()
+    {
+        //int, short, char, string, bool
+
+        //array, List<int>, Stack, Queue, LinkedList
+
+        //int student1 = 70;
+        //int student2 = 80;
+        ////int student3 = 60;
+        ///
+
+        string title = "Language"; //참조형 변수
+        Console.WriteLine(title.GetType());
+        Console.WriteLine(title[0].GetType());
+        //Console.WriteLine(title[1]);
+        //Console.WriteLine(title[2]);
+
+
+
+
+    }
+}
