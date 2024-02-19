@@ -1,0 +1,23 @@
+using System;
+
+class SumTest
+{
+    static void Main()
+    {
+        Console.WriteLine("정수값을 입력하세요: ");
+        int i = Convert.ToInt32(Console.ReadLine());
+        int sum = 0;
+
+
+        for (int num = 0; num <= i; num++)
+        {
+            if (num % 2 == 0)
+            {
+                sum += num;
+            }
+
+        }
+
+        Console.WriteLine($"1부터 {i}까지 짝수의 합 : {sum}");
+    }
+}
