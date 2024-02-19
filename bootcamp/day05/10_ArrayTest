@@ -1,0 +1,17 @@
+using System;
+
+class ArrayTest
+{
+    static void Main()
+    {
+        string[] strArray = new string[3];
+        strArray[0]= "rose";
+        strArray[1]= "tulip";
+        strArray[2]= "iris";
+
+        foreach (string str in strArray)
+        {
+            Console.WriteLine(str);
+        }
+    }
+}
