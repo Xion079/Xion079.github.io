@@ -1,0 +1,23 @@
+using System;
+
+class TwoDeimenArray2
+{
+    static void Main()
+    {
+        int[,] intsArr = new int[3, 3];
+
+        for(int i = 0; i < intsArr.GetLength(0); i++)
+        {
+            for(int j = 0; j < intsArr.GetLength(1); j++)
+            {
+                if (i == j)
+                {
+                    intsArr[i, j] = 1;
+                }
+
+                Console.Write($"{intsArr[i,j]}\t");
+            }
+            Console.WriteLine();
+        }
+    }
+}
