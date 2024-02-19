@@ -1,0 +1,30 @@
+using System;
+
+class IntArray
+
+{
+    static void Main()
+    {
+        int[] ints = new int[3]; //배열 선언  stack
+        //ints = new int[3]; // heap
+
+        int[] int_Array = { 10, 20, 30 };
+        //ints[0] = 10;
+        //ints[1] = 20;
+        //ints[2] = 30;
+        Console.WriteLine("For 구문");
+        for (int i = 0; i < ints.Length; i++) //ints.Length는 3임 위에 우리가 3으로 크기정해놔서
+        {
+            Console.WriteLine(int_Array[i]);
+        }
+
+        Console.WriteLine("Foreach 구문");
+        foreach(int i in ints)
+        {
+            Console.WriteLine(i);
+        }
+        //foreach구문은 배열 안에거를 가져옴 그러니까 10,20,30아니고 0,0,0 으로 나옴
+
+
+    }
+}
