@@ -1,0 +1,19 @@
+using System;
+
+class DoWhile
+{
+    static void Main()
+    {
+        int i = 0;
+
+        do
+        {
+            Console.WriteLine($"안녕하세요 {i}");
+            i++;
+        }while (i < 3);
+
+
+        Console.WriteLine("프로그램 종료");
+        //while안의 조건이 안맞아도 do를 쓰면 do안의 내용은 무조건 한번은 재생함
+    }
+}
