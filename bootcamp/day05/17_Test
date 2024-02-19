@@ -1,0 +1,22 @@
+using System;
+
+class Test
+{
+    static void Main()
+    {
+        Console.WriteLine("목표값을 입력하세요:");
+        int num = Convert.ToInt32(Console.ReadLine());
+        int sum = 0;
+        int i = 0;
+
+        while(true)
+        {
+            sum += i;
+            if (sum >= num)
+                break;
+            i++;
+        }
+
+    Console.WriteLine($"1부터 {i}의 값의 합은 {sum}이고 목표치{num}을 달성했습니다");
+    }
+}
