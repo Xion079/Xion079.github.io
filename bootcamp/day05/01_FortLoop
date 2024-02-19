@@ -1,0 +1,15 @@
+using System;
+
+// for 초기식; 조건식; 증감식; {실행구문}
+
+class FortLoop
+{
+    static void Main()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            Console.WriteLine($"좋은 아침입니다.{i}");
+        }   
+
+    }
+}
