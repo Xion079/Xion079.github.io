@@ -1,0 +1,14 @@
+using System;
+
+class CharArray
+{
+    static void Main()
+    {
+        char[] charArray = ['a','p', 'p','l','e'];
+
+        foreach ( char c in charArray)
+        {
+            Console.WriteLine(c);
+        }
+    }
+}
