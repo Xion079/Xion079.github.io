@@ -1,0 +1,17 @@
+using System;
+
+class StringArray
+{
+    static void Main()
+    {
+        string[] strArray = new string[3];
+        strArray[0] = "Korean";
+        strArray[1] = "English";
+        strArray[2] = "Chinese";
+
+        foreach (string str in strArray)
+        {
+            Console.WriteLine(str);
+        }
+    }
+}
