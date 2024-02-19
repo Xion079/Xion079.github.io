@@ -1,0 +1,36 @@
+using System;
+
+class Factorial
+{
+    static void Main()
+    {
+        //int num = 10;
+        //int nfact = 0;
+
+        //for (int i = 1; i < num + 1; i++)
+        //{
+        //    nfact = 1;
+        //    for (int j = 1; j <= i; j++) 
+        //    {
+        //        nfact *= j;
+        //    }
+        //    Console.WriteLine($"{i}!의 값은 {nfact}");
+
+
+        //}
+
+
+        Console.WriteLine("구구단 하는 예제");
+        Console.WriteLine("몇단까지할까요? :");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 2; i <= num; i++)
+        {
+            for (int j = 1; j <= 9; j++)
+            {
+                Console.WriteLine($"{i} x {j} = {i * j}");
+            }
+            Console.WriteLine();
+        }
+    }  
+}
