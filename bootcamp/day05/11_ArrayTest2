@@ -1,0 +1,21 @@
+using System;
+
+class ArrayTest2
+{
+    static void Main()
+    {
+        Console.Write("첫 번째 이름을 차례대로 입력하세요:___\b\b\b");
+        string? name1 = (Console.ReadLine());
+        Console.Write("첫 번째 이름을 차례대로 입력하세요:___\b\b\b");
+        string? name2 = (Console.ReadLine());
+        Console.Write("첫 번째 이름을 차례대로 입력하세요:___\b\b\b");
+        string? name3 = (Console.ReadLine());
+
+        string[] namestr = new string[] { name1, name2, name3 };
+
+        foreach (string str in namestr)
+        {
+            Console.Write($"{str}\t");
+        }
+    }
+}
