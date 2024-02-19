@@ -1,0 +1,23 @@
+using System;
+
+class TwoDimenArray
+{
+    static void Main()
+    {
+        int[,] intsArr = new int[2, 3];
+        intsArr[0, 0] = 1;
+        intsArr[0, 1] = 2;
+        intsArr[0, 2] = 3;
+        intsArr[1, 0] = 4;
+        intsArr[1, 1] = 5;
+        intsArr[1, 2] = 6;
+
+        for (int i = 0; i < intsArr.GetLength(0); i++)
+        {
+            for (int j = 0; j < intsArr.GetLength(1); j++)
+            {
+                Console.WriteLine(intsArr[i, j]);
+            }
+        }
+    }
+}
