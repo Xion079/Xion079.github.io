@@ -1,0 +1,43 @@
+using System;
+using System.Runtime.ExceptionServices;
+
+class Fibonacci
+{ static void Main()
+    {
+        Console.WriteLine("원하는 토끼쌍을 입력하세요:");
+        int num = Convert.ToInt32 (Console.ReadLine());
+        int gen = 0;
+
+        int fir = 0;
+        int sec = 1;
+
+        while (sec < num)
+        {
+            Console.WriteLine($"{sec},\t\t{gen}");
+
+            int temp = fir + sec;
+            fir = sec;
+            sec = temp;
+            gen++;
+        }
+        Console.WriteLine($"{sec},\t\t{gen}");
+
+
+        //Console.WriteLine("원하는 토끼쌍을 입력하세요:");
+        //int rab = Convert.ToInt32(Console.ReadLine());
+        //int i = 1;
+
+        //int fir = 0;
+        //int sec = 1;
+
+        //while (i <= rab) 
+        //{
+        //    fir += sec;
+        //    Console.WriteLine($"{fir},     {i}");
+        //    Console.WriteLine($"{sec},     {i}");
+
+        //    i++;
+        //}
+        //  내가 했던 틀린 예시임 위에걸로 기억해야함
+    }
+}
