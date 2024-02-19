@@ -1,0 +1,21 @@
+using System;
+
+class Break
+{
+    static void Main()
+    {
+        int num = 1;
+
+        while (true)
+        {
+            Console.WriteLine(num);
+            num++;
+
+            if (num >= 200) 
+            {
+                break;
+            }
+        }
+        Console.WriteLine("프로그램 종료");
+    }
+}
