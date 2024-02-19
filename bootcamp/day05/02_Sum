@@ -1,0 +1,17 @@
+using System;
+
+class Sum
+{
+    static void Main()
+    {
+        int sum = 0;
+
+        for ( int i = 0; i <= 100; i++)
+        {
+            //sum  = sum + i; 
+            sum += i;
+        }
+
+        Console.WriteLine($"0 부터 100까지의 합은 {sum}");
+    }
+}
