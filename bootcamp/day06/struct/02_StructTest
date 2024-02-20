@@ -1,0 +1,26 @@
+using System;
+
+public struct Member
+{
+    public string name;
+    public int age;
+    public string address;
+}
+class StructTest
+{
+    static void Main()
+    {
+        Member member1;
+        member1.name = "홍길동";
+        member1.age = 20;
+        member1.address = "지리산 자락";
+
+        Member member2;
+        member2.name = "임꺽정";
+        member2.age = 40;
+        member2.address = "설악산 자락";
+
+        Console.WriteLine($"{member1.name}, 나이:{member1.age}, 주소:{member1.address}");
+        Console.WriteLine($"{member2.name}, 나이:{member2.age}, 주소:{member2.address}");
+    }
+}
