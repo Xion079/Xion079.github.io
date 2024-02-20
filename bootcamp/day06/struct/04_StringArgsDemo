@@ -1,0 +1,16 @@
+using System;
+
+class StringArgsDemo
+{
+    static void Main(string[] args)
+    {
+        if (args.Length == 0) { Console.WriteLine("입력된 인수가 없습니다."); }
+        else
+        {
+            foreach (string arg in args)
+            {
+                Console.WriteLine($"{arg}에 대한 추천항목");
+            }
+        }
+    }
+}
