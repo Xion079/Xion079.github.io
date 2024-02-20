@@ -1,0 +1,35 @@
+using System;
+
+public struct Member
+{
+    public string name;
+    public int age;
+}
+
+class StringArgs
+{ 
+    //static void Hi()
+    //{
+    //    Member member = new Member();
+    //    member.name = "홍길동";
+    //    member.age = 20;
+
+    //    Console.WriteLine($"{member.name} - {member.age}")
+    //}
+    //static void Hi(string name)
+    //{
+    //    Console.WriteLine($"{name} - 40");
+    //}
+
+
+    static void Main(string[] args)
+    {
+        if (args.Length == 0)  { Hi(); }
+
+        else
+        {
+            if (args[0] == "임꺽정") { Hi("임꺽정"); }
+        }
+    }
+
+}
