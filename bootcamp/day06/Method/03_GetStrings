@@ -1,0 +1,20 @@
+using System;
+using System.Threading.Channels;
+
+class GetStrings
+{
+    static string GetString(int num)
+    {
+        //string? reslut = $"{num} 번째 반환값입니다.";
+        return $"{num} 번째 반환값입니다.";
+    }
+    
+    static void Main()
+    { 
+        for (int i = 0; i < 3; i++)
+        {
+            string v = GetString(i);
+            Console.WriteLine(v);
+        }
+    }
+}
