@@ -1,0 +1,25 @@
+using System;
+using System.Reflection;
+
+public struct Product
+{
+    public int id;
+    public string title;
+    public int price;
+}
+
+class StructTest
+{
+
+    static void Main()
+    {
+        Product product;
+        product.id = 1;
+        product.title = "좋은 책";
+        product.price = 10000;
+
+        string message = $"번호:{product.id}\n제목:{product.title}\n가격:{product.price}";
+        Console.WriteLine(message);
+
+    }
+}
