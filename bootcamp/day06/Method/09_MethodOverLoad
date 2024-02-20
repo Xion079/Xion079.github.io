@@ -1,0 +1,46 @@
+using System;
+
+class MethodOverLoad
+{
+    //static void GetNumber(int x)
+    //{
+    //    Console.WriteLine($"int {x}");
+    //}
+
+    //static void GetNumber(long x)
+    //{
+    //    Console.WriteLine(x * x);
+    //}
+
+
+    //static void Main()
+    //{
+    //    GetNumber(1234);
+    //    GetNumber(1234L);
+    //}
+
+    //static void Multi()
+    //{
+    //    Console.WriteLine("안녕하세요");
+    //}
+
+    ////static void Multi(string word)
+    //{
+    //      Console.WriteLine(word);
+    //}
+
+    static void Multi(string word = "안녕하세요.", int j = 1)
+    {
+        for (int i = 0; i < j; i++) 
+        {
+            Console.WriteLine(word);
+        }
+    }
+
+    static void Main()
+    {
+        Multi();
+        Multi("반갑습니다.");
+        Multi("또 만나요.", 3);
+    }
+}
