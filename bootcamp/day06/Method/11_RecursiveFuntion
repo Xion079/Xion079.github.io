@@ -1,0 +1,33 @@
+using System;
+
+class RecursiveFuntion
+{
+    static int Factorial(int n)
+    {
+        if (n == 0 || n == 1) 
+        {
+            return 1;
+        }
+        int val = n * Factorial(n - 1);
+        return val;
+    }
+    //자기가 자기를 불러서 반복함 잘못하면 컴터 다운됨 메모리를 계속 먹어서
+
+    static void Main()
+    {
+        //int a = 1;
+        //int n = 4;
+
+        //for (int i = 1; i <= n; i++)
+        //{
+        //    a *= i;
+        //}
+        //Console.WriteLine($"{n}! => {a}");
+
+        int n = 10;
+
+        int retValue = Factorial(n);
+        Console.WriteLine($"{n}! => {retValue}");
+
+    }
+}
