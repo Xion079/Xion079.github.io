@@ -1,0 +1,17 @@
+using System;
+class SquareFuntion
+{
+    static void squareFuntion(int x)
+    {
+        //int result = x * x;
+        //return result;
+        Console.WriteLine(x*x);
+    }
+
+
+    static void Main()
+    {
+       /* int retValue = */squareFuntion(2);
+        //Console.WriteLine(retValue);
+    }
+}
