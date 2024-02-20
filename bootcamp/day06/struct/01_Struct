@@ -1,0 +1,30 @@
+using System;
+
+public struct Point     //여러가지 타입의 변수를 담아 놓은 역할
+{
+    public int hp;
+    public int health;
+    public string? name;
+    public bool flight;
+}
+//이걸 쓰는 이유는 예를들어 여러명의 개발자가 같은 게임을 만들때
+//전부 같은 이름의 변수를 사용할수있게 만들어 놓은거임
+
+class Struct
+{
+    static void Main()
+    {
+        Point point;
+        point.hp = 1;
+        point.health = 2;
+        point.name = "용사";
+        point.flight = false;
+        Console.WriteLine($"{point.name}, 체력 = {point.hp}");
+
+        Point point2 = new Point(); //생성과 동시에 초기화
+        Console.WriteLine($"{point2.name}, 체력 = {point2.hp}");
+        point2.hp = 20;
+        point2.health = 30;
+        point2.name = "괴물";
+    }
+}
