@@ -1,0 +1,21 @@
+using System;
+using System.ComponentModel;
+using System.Data;
+
+class LocalFuntion
+{
+    //static void Sum(int a, int b)
+    //{
+    //    Console.WriteLine(a + b);
+    //}
+
+    static void Main()
+    {
+        void Sum(int x, int y)
+        {
+            Console.WriteLine(x + y);
+        }
+
+        Sum(10, 20);
+    }
+}
