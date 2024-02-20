@@ -1,0 +1,21 @@
+using System;
+using System.ComponentModel;
+
+class ArrowedFun
+{
+    static void Hi() => Console.WriteLine("안녕하세요");
+
+    static int Sum(int x, int y) => (x + y);
+    //한줄일때는 =>을 return 대신에 쓸수있음
+    //정석은
+    //{
+    //    return (x+y);
+    //}
+
+    static void Main()
+    {
+        Hi();
+        int retValue = Sum(1, 2);
+        Console.WriteLine(Sum);
+    }
+}
