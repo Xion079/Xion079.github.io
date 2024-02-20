@@ -1,0 +1,22 @@
+using System;
+using System.Net.Http.Headers;
+class StringName
+{
+
+    static string show(string name)
+    {
+        // Console.WriteLine($"[1] 좋은 아침입니다 {name}");
+        string retValue = $"[1] 좋은 아침입니다 {name}";
+        return retValue;
+    }
+
+    static void Main()
+    {
+        Console.WriteLine("[0] Hello world");
+
+        string retValue = show("홍길동");
+        Console.WriteLine(retValue);
+
+        Console.WriteLine("프로그램 종료");
+    }
+}
