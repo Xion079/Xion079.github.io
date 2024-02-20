@@ -1,0 +1,26 @@
+using System;
+using System.ComponentModel;
+using System.Threading.Channels;
+
+class ArrowedFun
+{
+    static int[] retArr(int a, int b)
+    {
+        int[] ret = new int[2];
+        ret[0] = a;
+        ret[1] = b;
+
+        return ret;
+    }
+
+
+    static void Main()
+    {
+        int[] retArr1 = retArr(10, 5);
+
+        foreach (int i in retArr1)
+        { 
+            Console.WriteLine(i);
+        } 
+    }
+}
