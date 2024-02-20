@@ -1,0 +1,18 @@
+using System;
+
+class TupleReturn
+{
+    static Tuple<string, int> GetData(int i)
+    {
+        string retStr = $"입력값은 {i}";
+        Tuple<string, int> retVal = Tuple.Create(retStr, i);
+
+        return retVal;
+    }
+    static void Main()
+    {
+        Tuple<string, int> retTuple = GetData(10);
+        Console.WriteLine(retTuple.Item1);
+        Console.WriteLine(retTuple.Item2);
+    }
+}
