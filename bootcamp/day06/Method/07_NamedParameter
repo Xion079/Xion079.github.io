@@ -1,0 +1,18 @@
+using System;
+
+class NamedParameter
+{
+    static float Divide(float fir, float sec)
+    {
+        return fir / sec;
+    }
+
+    static void Main()
+    {
+        //float retValue = Divide(2, 1);
+        float retValue = Divide(sec: 1, fir: 2); // 위치를 바꿔서 넣어도 지정해서 넣어주면 넣어준대로 기동함
+                                                 // NamedParameter
+
+        Console.WriteLine($"2 / 1 = {retValue}");
+    }
+}
