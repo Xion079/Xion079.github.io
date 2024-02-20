@@ -1,0 +1,30 @@
+using System;
+
+public struct BusinessCard
+{
+    public string name;
+    public int age;
+}
+
+class StructArray
+{
+    static void Main()
+    {
+        BusinessCard businessCard1;
+        businessCard1.name = "A";
+        businessCard1.age = 15;
+
+        BusinessCard[] businessCards = new BusinessCard[2];
+        businessCards[0].name = "B";
+        businessCards[0].age = 23;
+
+        businessCards[1].name = "C";
+        businessCards[1].age = 40;
+
+        for (int i = 0; i < businessCards.Length; i++)
+        {
+            Console.WriteLine(businessCards[i].name);
+            Console.WriteLine(businessCards[i].age);
+        }
+    }
+}
