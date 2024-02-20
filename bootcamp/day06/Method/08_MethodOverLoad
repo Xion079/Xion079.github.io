@@ -1,0 +1,21 @@
+using System;
+
+class MethodOverLoad
+{
+    static void Hi()
+    {
+        Console.WriteLine("안녕하세요");
+    }
+
+    static void Hi(String name)
+    {
+        Console.WriteLine($"안녕하세요 {name}님");
+    }
+
+    static void Main()
+    {
+        //Hi();            // 안녕하세요
+        Hi("홍길동");      // 안녕하세요 홍길동님
+        //method가 Hi로 같지만 뭐를 부르냐에 따라 다름 
+    }
+}
