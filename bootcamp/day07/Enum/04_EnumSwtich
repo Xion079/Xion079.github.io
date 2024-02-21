@@ -1,0 +1,33 @@
+using System;
+enum Animal { Tiger, Bird, Dog, Cat}
+class EnumSwtich
+{
+    static void Main()
+    {
+        Animal animal = Animal.Tiger;
+
+        switch (animal)
+        {
+            case Animal.Tiger:
+                Console.WriteLine(animal);
+                Console.WriteLine("어흥");
+                break;
+
+            case Animal.Bird:
+                Console.WriteLine(animal);
+                Console.WriteLine("짹짹");
+                break;
+
+            case Animal.Dog:
+                Console.WriteLine(animal);
+                Console.WriteLine("멍멍");
+
+                break;
+                
+            case Animal.Cat:
+                Console.WriteLine(animal);
+                Console.WriteLine("야옹");
+                break;
+        }
+    }
+}
