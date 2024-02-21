@@ -1,0 +1,14 @@
+using System;
+
+class RandomClass
+{
+    static void Main()
+    {
+        Random random = new Random();
+        for (int i = 0; i < 10; i++)
+        {
+            int randValue = random.Next(5);
+            Console.WriteLine(randValue);
+        }
+    }
+}
