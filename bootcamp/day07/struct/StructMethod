@@ -1,0 +1,26 @@
+using System;
+
+public struct Flower
+{
+    public string name;
+    public int price;
+
+    public void Show_flower()
+    {
+        Console.WriteLine($"이름:{name} , 가격 = {price}");
+    }
+}
+
+class StructMethod
+{
+    static void Main()
+    {
+        Flower flower1 = new Flower();
+        flower1.name = "장미";
+        flower1.price = 8000;
+
+        flower1 .Show_flower(); //static이아니고 public이라
+                                //이런식으로 불러야함
+
+    }
+}
