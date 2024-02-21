@@ -1,0 +1,14 @@
+using System;
+
+class CharMethod
+{
+    static void Main()
+    {
+        char a = 'a';
+        char b = 'b';
+
+        Console.WriteLine(Char.ToUpper(a));
+        Console.WriteLine(Char.ToUpper(b));
+        Console.WriteLine(Char.IsNumber(a));
+    }
+}
