@@ -1,0 +1,14 @@
+using System;
+
+class EnumColor
+{
+    static void Main()
+    {
+        Console.WriteLine("짜장면 3900원");
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("짜장면 3900원");
+        Console.BackgroundColor = ConsoleColor.Green;
+        Console.WriteLine("짜장면 3900원");
+        Console.ResetColor();
+    }
+}
