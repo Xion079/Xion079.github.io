@@ -1,0 +1,31 @@
+using System;
+using System.Net.WebSockets;
+
+class MathAPI
+{
+    static int Absolute(int x)
+    {
+        int retValue = (x > 0) ? x : -x;
+        return retValue;
+    }
+
+    static void Main()
+    {
+        int retValue = Absolute(-5);
+        Console.WriteLine(retValue);
+
+        // 절대값 API
+        Console.WriteLine(Math.Abs(-10));
+        Console.WriteLine(Math.E ); // 자연상수 E
+        Console.WriteLine(Math.PI); // 원주율
+        Console.WriteLine(Math.Round(Math.PI)); //소수점버림
+        Console.WriteLine(Math.Pow(10,3)); //10의 2제곱
+        Console.WriteLine(Math.Max(10,16));
+        //Math.Abs가 절대값 찾아주는 API임
+
+        int Div = Math.DivRem(10,3, out int result);
+        //10을 3으로 나눌때 나머지 1(result)
+        Console.WriteLine($"{Div}, {result}");
+
+    }
+}
