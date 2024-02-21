@@ -1,0 +1,24 @@
+using System;
+
+class ReviewDay6
+{
+    static void Hi()    //반환값이 없고 매개변수도 없음
+    {
+        Console.WriteLine("Hello world");
+    }
+
+    static int SquareFunction(int x = 10)
+    {
+        return x * x;
+    }
+
+    static void Main()
+    {
+        int x = 10;
+        Hi();
+
+        //int retValue = SquareFunction(x); 10*10이 나옴
+        int retValue = SquareFunction(5); // 5*5가나옴 10*10이 아니라
+        Console.WriteLine(retValue);
+    }
+}
