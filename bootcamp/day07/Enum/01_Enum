@@ -1,0 +1,17 @@
+using System;
+
+enum Grade { High, MID, Low }   // 열거형 자료
+
+class Enum
+{
+    static void Main()
+    {
+        Grade grade = Grade.High;
+
+        if(grade == Grade.High) 
+        {
+            Console.WriteLine("고득점자");
+        }
+
+    }
+}
