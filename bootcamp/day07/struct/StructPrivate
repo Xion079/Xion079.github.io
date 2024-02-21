@@ -1,0 +1,38 @@
+using System;
+
+public struct Flower
+{
+    //필드 + 메서드 => 맴버
+    private string name;    //필드
+    private int price;
+    //public을 private로 바꿔서 접근을 못함
+
+    public void SetName(string name, int price)
+    {
+        this.name = name;
+        this.price = price;
+    }
+    public void GetName()
+    {
+       Console.WriteLine($"{this.name} - {this.price}");
+    }
+    //this 뜻은 필드 값을 부르는 거임
+
+}
+
+
+class StructPrivate
+{
+    static void Main()
+    {
+        Flower flower1 = new Flower();
+
+        //flower1.SetName = "백합";
+        //flower1.price = 10000;
+        //Console.WriteLine($"{flower1.name} - {flower1.price}");
+
+        flower1.SetName("장미",10000);
+        flower1.GetName();
+
+    }
+}
