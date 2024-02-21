@@ -1,0 +1,43 @@
+using System;
+
+
+public struct Attribute
+{
+    public int hp;
+    public string? name;
+    public bool flight;
+}
+
+public struct BusinessCard
+{
+    public string? name;
+    public int age;
+}
+
+class Structure
+{
+    static void Main()
+    {
+        //Attribute attribute = new Attribute();
+        //attribute.hp = 100;
+        //attribute.name = "orc";
+        //attribute.flight = false;
+
+        //Console.WriteLine($"{attribute.hp} - {attribute.name} - {attribute.flight}");
+
+
+        BusinessCard[] businessCard = new BusinessCard[3];
+        businessCard[0].name = "홍길동";
+        businessCard[0].age = 20;
+
+        businessCard[1].name = "임꺽정";
+        businessCard[1].age = 40;
+
+        businessCard[2].name = "ㅎㅇㄴ";
+        businessCard[2].age = 30;
+
+
+        Console.WriteLine($"{businessCard[2].name}");
+
+    }
+}
