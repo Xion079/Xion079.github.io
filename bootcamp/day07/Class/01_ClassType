@@ -1,0 +1,33 @@
+using System;
+
+public class Square
+{
+    //필드 (열순있는데 거의 막아서 사용함 private)
+
+    //메서드 (막을순 있는데 거의 열어서 상요함 public)
+    public double GetSquare(double x) //클래스 객체(instance) 메소드
+    {
+        return Math.Pow(x, 2);
+    }
+
+    public static double GetTriple(double x) //static 정적 메소드
+    {
+        return Math.Pow(x, 3);
+    }
+
+}
+
+class ClassType
+{
+    static void Main()
+    {
+        Square square = new Square();   //클래스 객체, instance
+        double retValue1 = square.GetSquare(2); //인스턴스 메소드를 호출
+       // double retValue2 = square.GetTriple(2);
+        double retValue2 = Square.GetTriple(2); //static(정적) 메소드를 호출
+        
+        
+        Console.WriteLine(retValue1);
+        Console.WriteLine(retValue2);
+    }
+}
