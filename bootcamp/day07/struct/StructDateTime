@@ -1,0 +1,42 @@
+using System;
+using System.Threading.Channels;
+
+//public struct People
+//{
+//    public string name;
+//    public int age;
+//}
+
+class StructDateTime
+{
+    static void Main()
+    {
+        //{
+        //    People person1 = new People();
+        //    person1.name = "홍길동";
+        //    person1.age = 30;
+
+        //    People person2 = new People();
+        //    person2.name = "임꺽정";
+        //    person2.age = 35;
+
+        //    Console.WriteLine($"name = {person1.name}");
+        //    Console.WriteLine($"age = {person1.age}");
+
+        //    Console.WriteLine($"name = {person2.name}");
+        //    Console.WriteLine($"age = {person2.age}");
+        //}
+
+        Console.WriteLine(DateTime.Now);
+        Console.WriteLine(DateTime.Now.Year);
+        Console.WriteLine(DateTime.Now.Month);
+        Console.WriteLine(DateTime.Now.Day);
+        Console.WriteLine(DateTime.Now.Hour);
+        Console.WriteLine(DateTime.Now.Minute);
+        Console.WriteLine(DateTime.Now.Second);
+        Console.WriteLine(DateTime.Now.Millisecond);
+
+
+
+    }
+}
