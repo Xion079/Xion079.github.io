@@ -1,0 +1,26 @@
+using System;
+
+enum Animal { Tiger = 1, Lion, Elephant, Horse}
+//tiger가 0인데 내가 1로 지정해줘서 뒤에것들도 하나씩 밀림
+
+class EnumAnimal
+{
+    static void Main()
+    {
+        Animal animal = Animal.Lion;
+        Console.WriteLine(animal);
+        Console.WriteLine((int)animal);
+
+
+
+        //if (animal == Animal.Lion) 
+        //{
+        //    Console.WriteLine("어흥");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("야옹");
+        //}
+
+    }
+}
