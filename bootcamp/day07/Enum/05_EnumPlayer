@@ -1,0 +1,42 @@
+using System;
+
+enum PlayerType { None, Knight, Archer, Mage}
+
+class EnumPlayer
+{
+    static PlayerType ChoosePlayer()
+    {
+        Console.WriteLine("원하는 직업을 골라주세요");
+        Console.WriteLine("[1] Knight");
+        Console.WriteLine("[2] Archer");
+        Console.WriteLine("[3] Mage");
+
+        string? input = Console.ReadLine();
+        PlayerType playerType = PlayerType.None;
+
+        switch (input)
+        {
+            case "1":
+                Console.WriteLine($"{PlayerType.Knight}");
+                playerType = PlayerType.Knight;
+                break;
+            case "2":
+                Console.WriteLine($"{PlayerType.Archer}");
+                playerType = PlayerType.Archer;
+                break;
+            case "3":
+                Console.WriteLine($"{PlayerType.Mage}");
+                playerType = PlayerType.Mage;
+                break;
+            default:
+                break;
+        }
+        return playerType;
+    }
+
+    static void Main()
+    {
+        PlayerType player1 = ChoosePlayer();
+   
+    }
+}
