@@ -1,0 +1,20 @@
+using System;
+
+public class ClassName
+{
+    public static void MemberName()
+    {
+        Console.WriteLine($"이름: 홍길동");
+    }
+}
+
+class ClassStatic
+{
+    static void Main()
+    {
+        ClassName clsname = new ClassName();
+        //clsname.MemberName();
+
+        ClassName.MemberName(); //static을 쓴 정적 메소드는 바로 호출함
+    }
+}
