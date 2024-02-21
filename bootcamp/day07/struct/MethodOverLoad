@@ -1,0 +1,37 @@
+using System;
+
+class MethodOverLoad
+{
+    static void Multi()
+    {
+        Console.WriteLine("안녕하세요");
+    }
+
+    static void Multi(string name)
+    {
+        Console.WriteLine($"{name}님 안녕하세요");
+    }
+
+    static void Multi(string name, int age)
+    {
+        for (int i = 0; i < age; i++)
+        {
+            Console.WriteLine($"{name}님 안녕하세요");
+        }
+    }
+
+    static void Main()
+    {
+        Multi();
+        Multi("홍길동");
+        Multi("홍길동", 3);
+        //MethodOverLoad
+
+        void Sum(int x, int y)
+        {
+            Console.WriteLine(x * y);
+        }
+        Sum(10, 20); //Main안에 있는건 localfunction이라 부름
+        
+    }
+}
