@@ -1,0 +1,46 @@
+using System;
+
+public struct Monsters
+{
+    private string name;
+    private int attack;
+    private bool life;
+
+    public Monsters(string name, int attack, bool life)
+    {
+        this.name = name;
+        this.attack = attack;
+        this.life = life;
+    }
+    //메서드가 아님 생성자(Constructor)라 부름 void 가 빠짐
+
+    //public void SetParams(string name, int attack, bool life)
+    //{
+    //    this.name = name;
+    //    this.attack = attack;
+    //    this.life = life;   
+    //}
+    //메서드
+
+    public void GetPrames()
+    {
+        Console.WriteLine($"{this.name} - {this.attack} - {this.life}");
+    }
+
+}
+class StructConstruct
+{
+    static void Main()
+    {
+        //Monsters monster = new Monsters();
+        //monster.SetParams("용가리", 100, true);
+        //메서드 호출방식
+
+        Monsters monster1 = new Monsters("용가리", 100, true);
+        monster1.GetPrames();
+        //생성자 호출방식
+
+        Monsters monster2 = new Monsters("고질라", 90, true);
+        monster2.GetPrames();
+    }
+}
