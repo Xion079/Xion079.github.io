@@ -1,0 +1,50 @@
+using System;
+
+enum PlayerType { None, Knight, Archer, Mage}
+
+struct Player
+{
+    public string name;
+    public int hp;
+    public int attack;
+}
+
+class EnumStructPlayer
+{
+    static Player GetPlayer()
+    {
+        Console.WriteLine("원하는 player를 입력하세요");
+        Console.WriteLine("[1] Knight");
+        Console.WriteLine("[2] Archer");
+        Console.WriteLine("[3] Mage");
+        string? input = Console.ReadLine();
+
+        Player player = new Player();
+
+        switch(input)
+        {
+            case "1":
+                player.name = "기사";
+                player.hp = 100;
+                player.attack = 20;
+                break;
+            case "2":
+                player.name = "궁수";
+                player.hp = 80;
+                player.attack = 30;
+                break;
+            case "3":
+                player.name = "마법사";
+                player.hp = 60;
+                player.attack = 40;
+                break;
+        }
+        return player;
+    }
+
+    static void Main()
+    {
+        Player player = GetPlayer();
+        Console.WriteLine($"직업:{player.name} - 체력:{player.hp} - 공격력:{player.attack}");
+    }
+}
