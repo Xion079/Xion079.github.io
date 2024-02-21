@@ -1,0 +1,37 @@
+using System;
+
+public struct Monsters
+{
+    private string name;
+    private int power;
+
+    public void Setting(string name, int power)
+    {
+        this.name = name;
+        this.power = power;
+    }
+
+    public void GetName()
+    {
+        Console.WriteLine($"{this.name}");
+    }
+    public void GetPower()
+    {
+        Console.WriteLine($"{this.power}");
+    }
+}
+class StructPrivateTest
+{
+    static void Main()
+    {
+        Monsters monster = new Monsters();
+        monster.Setting("용가리", 100);
+        monster.GetName();
+        monster.GetPower();
+
+        Monsters monster1 = new Monsters();
+        monster1.Setting("고질라", 200);
+        monster1.GetName();
+        monster1.GetPower();
+    }
+}
