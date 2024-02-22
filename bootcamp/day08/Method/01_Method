@@ -1,0 +1,27 @@
+using System;
+
+public class Car
+{
+    private void Start()
+    {
+        Console.WriteLine("자동차 시동");
+    }
+    public void Run()
+    {
+        this.Start();
+        Console.WriteLine("자동차 출발");
+    }
+}
+
+
+class Method
+{
+    static void Main()
+    {
+        Car car = new Car();
+        //car.Start();
+        car.Run();
+
+    }
+
+}
