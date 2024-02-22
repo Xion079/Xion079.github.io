@@ -1,0 +1,25 @@
+using System;
+
+public class Category
+{
+    public void Hi(int x)
+    {
+        Console.WriteLine($"Hello World, {x}");
+    }
+}
+
+class ClassArray
+{
+    static void Main()
+    {
+        Category[] categories = new Category[3];
+        categories[0] = new Category();
+        categories[1] = new Category();
+        categories[2] = new Category();
+
+        for (int i = 0; i < 3; i++)
+        {
+            categories[i].Hi(i);
+        }
+    }
+}
