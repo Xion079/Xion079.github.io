@@ -1,0 +1,48 @@
+using System;
+
+class Flower
+{
+    // 필드
+    private string? name;
+    private int price;
+
+    //생성자
+    public Flower(string? name, int price)
+    {
+        this.name = name;
+        this.price = price;
+    }
+    //메서드
+    public void SetParams(string name, int price)
+    {
+        this.name = name;
+        this.price = price;
+    }
+
+    public void GetParams()
+    {
+        Console.WriteLine($"이름:{this.name} - 가격:{this.price}");
+    }
+    public void Show() 
+    {
+        Console.WriteLine($"이름:{this.name} - 가격:{this.price}");
+    }
+}
+
+
+class ConstructInitializer
+{
+    static void Main()
+    {
+        Flower flower1 = new Flower("Rose", 10000);
+        //flower1.name = "Rose";
+        //flower1.price = 10000;
+        //flower1.Show();
+        //flower1.SetParams("Rose", 10000);
+        flower1.GetParams();
+
+        flower1.SetParams("Lily", 8000);
+        flower1.GetParams();
+    }
+
+}
