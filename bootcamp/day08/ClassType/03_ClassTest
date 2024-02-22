@@ -1,0 +1,20 @@
+using System;
+using System.Data;
+
+class MyMath
+{
+    public void Sum(int a, int b)
+    {
+        Console.WriteLine($"합계는 {a + b}");
+    }
+}
+
+class ClassTest1
+{
+    static void Main()
+    {
+        MyMath myMath = new MyMath();
+        myMath.Sum(3,5);
+    }
+
+}
