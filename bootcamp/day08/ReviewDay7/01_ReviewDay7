@@ -1,0 +1,44 @@
+using System;
+
+public struct Flower
+{
+    // 필드 값
+    private string name;
+    private int price;
+
+    public void SetParams(string name, int price)
+    {
+        this.name = name;
+        this.price = price;
+    }
+    // 메서드
+
+    public void GetParams()
+    {
+        Console.WriteLine($"{this.name} - {this.price}");
+    }
+
+    //public void Print()
+    //{
+    //    Console.WriteLine($"{this.name} - {this.price}");
+    //}
+
+}
+
+
+class ReviewDay7
+{
+    static void Main(string[] args)
+    {
+        Flower flower = new Flower();
+        //flower.name = "Rose";
+        //flower.price = 8000;
+        flower.SetParams("Rose", 8000);
+        flower.GetParams();
+
+        //char a = 'a';
+        //char b = 'B';
+        //Console.WriteLine(Char.ToUpper(a));
+        //Console.WriteLine(Char.ToLower(b));
+    }
+}
