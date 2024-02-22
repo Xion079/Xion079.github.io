@@ -1,0 +1,27 @@
+using System;
+
+class ParamsPractice
+{
+    static void Multi(params string[] str)
+    {
+        for (int i = 0; i < str.Length; i++)
+        {
+            if (i == (str.Length - 1))
+            {
+                Console.WriteLine(str[i]);
+            }
+            else
+            {
+                Console.WriteLine(str[i] + "+");
+            }
+        }
+    }
+
+    static void Main()
+    {
+        Multi("A");
+        Multi("A","B");
+        Multi("A","B","C");
+    }
+
+}
