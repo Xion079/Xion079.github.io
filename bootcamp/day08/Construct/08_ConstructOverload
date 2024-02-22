@@ -1,0 +1,23 @@
+using System;
+
+class Flower
+{
+    public Flower()
+    {
+        Console.WriteLine("기본 생성자 호출");
+    }
+    public Flower(string name)
+    {
+        Console.WriteLine($"{name} 생성자 호출");
+    }
+}
+
+class ConstructOverload
+{
+    static void Main()
+    {
+        Flower f1 = new Flower();
+        Flower f2 = new Flower("오버로드");
+    }
+
+}
