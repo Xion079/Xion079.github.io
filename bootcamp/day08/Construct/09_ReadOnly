@@ -1,0 +1,46 @@
+using System;
+using System.Runtime.CompilerServices;
+
+public class Flower
+{
+    private string? name;
+    private string? color;
+    private readonly int price; // readonly 단한번 생성자에서 초기화
+                                // 못바꿈 그래서 아래에서 12000으로 초기화했는데 
+                                // 안바뀜
+
+    public Flower(string? name,string? color,int price)
+    {
+        this.name = name;
+        this.color = color;
+        this.price = price;
+    }
+
+    public void SetParams(string? name, string? color, int price)
+    {
+        this.name = name;
+        this.color = color;
+      //this.price = price;    
+    }
+
+    public void GetParams()
+    {
+        Console.WriteLine(this.name);
+        Console.WriteLine(this.color);
+        Console.WriteLine(this.price);
+    }
+}
+
+
+class ReadOnly
+{
+    static void Main()
+    {
+        Flower flower = new Flower("rose", "red", 10_000);
+        flower.GetParams();
+
+        flower.SetParams("rose", "color", 12_000); //12000으로 안나옴
+        flower.GetParams();
+    }
+
+}
