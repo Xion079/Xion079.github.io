@@ -1,0 +1,19 @@
+using System;
+
+public class Student
+{
+    public Student() 
+    {
+        Console.WriteLine("Student 생성자 호출");
+    }
+}
+
+
+class StudentConstruct
+{
+    static void Main()
+    {
+        Student student = new Student();
+    }
+
+}
