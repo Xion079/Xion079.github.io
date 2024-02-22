@@ -1,0 +1,33 @@
+using System;
+
+enum Animal { None, Tiger, Lion, Zebra}
+
+
+
+class EnumType
+{
+
+    static void Main()
+    {
+        Animal animal = Animal.Tiger;
+
+        switch(animal)
+        {
+            case Animal.None:
+                break;
+            case Animal.Tiger:
+                break;
+
+
+                    
+        }
+
+        //Console.WriteLine(animal);
+        //Console.WriteLine((int)animal);
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.WriteLine("눈이 오네");
+        Console.BackgroundColor = ConsoleColor.Cyan;
+
+    }
+
+}
