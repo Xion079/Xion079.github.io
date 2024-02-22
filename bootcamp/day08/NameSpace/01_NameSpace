@@ -1,0 +1,44 @@
+using System;
+using Korea.Seoul;
+using In = Korea.Incheon;
+//여기에 명명 하면 밑에서 풀네임이 아니고
+//여기서 명명한대로 쓸수잇음
+
+namespace Korea
+{
+    namespace Seoul
+    {
+        public class Car
+        {
+            public void Go()
+            {
+                Console.WriteLine("자동차 출발");
+            }
+        }
+    }
+    namespace Incheon
+    {
+        public class Car
+        {
+            public void Go()
+            {
+                Console.WriteLine("자동차 시동");
+            }
+        }
+    }
+
+}
+
+
+class Namespace
+{
+    static void Main()
+    {
+        In.Car KICar = new In.Car();
+        KICar.Go();
+        Console.WriteLine("------------------------");
+        Korea.Seoul.Car KSCar = new Korea.Seoul.Car();
+        KSCar.Go();
+    }
+
+}
