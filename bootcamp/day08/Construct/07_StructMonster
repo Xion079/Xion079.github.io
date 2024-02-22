@@ -1,0 +1,43 @@
+using System;
+
+public class Monster
+{
+    private int atk;
+    private string? name;
+    private static int unit;
+
+    public Monster(string name, int atk)
+    {
+        this.atk = atk;
+        this.name = name;
+        unit++;
+    }
+
+    public void ShowMonster()
+    {
+        Console.Write($"공격력 {this.atk},");
+        Console.WriteLine($"{this.name} 몬스터가 생성");
+    }
+
+    public static void GetNum()
+    {
+        Console.WriteLine($"생성된 유닛의 수는 {unit}");
+    }
+
+}
+
+
+class StructMonster
+{
+    static void Main()
+    {
+        Monster monster1 = new Monster("용가리", 20);
+        monster1.ShowMonster();
+
+        Monster monster2 = new Monster("고질라", 10);
+        monster2.ShowMonster();
+
+        Monster.GetNum();
+    }
+
+}
