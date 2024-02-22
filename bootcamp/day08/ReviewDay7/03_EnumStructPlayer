@@ -1,0 +1,47 @@
+using System;
+
+enum PlayerType {  None,Knight,Archor,Mage}
+struct Player
+{
+    public string name;
+    public int hp;
+    public int atk;
+}
+
+
+class EnumStructPlayer
+{
+    static Player GetPlayer(PlayerType playerType)
+    {
+        Player player = new Player();
+
+        switch (playerType)
+        {
+            case PlayerType.Knight:
+                player.hp = 100;
+                player.atk = 40;
+                player.name = "전사";
+                break;
+            case PlayerType.Archor:
+                player.hp = 80;
+                player.atk = 60;
+                player.name = "궁수";
+                break;
+            case PlayerType.Mage:
+                player.hp = 70;
+                player.atk = 70;
+                player.name = "마법사";
+                break;
+        }
+        return player;
+    }
+
+
+    static void Main()
+    {
+        Player player = GetPlayer(PlayerType.Mage);
+        Console.WriteLine(player.name);
+        Console.WriteLine(player.hp);
+        Console.WriteLine(player.atk);
+    }
+}
