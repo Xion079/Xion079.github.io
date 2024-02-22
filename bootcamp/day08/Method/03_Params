@@ -1,0 +1,24 @@
+using System;
+
+class Params
+{
+    static int SumAll(params int[] nums) // params를 쓰면
+    {
+        int sum = 0;
+        foreach (int i in nums)
+        {
+            sum += i;
+        }
+        return sum;
+    }
+
+    static void Main()
+    {
+        //int[] ints = { 1, 2, 3, 4, 5 };
+        
+        int retValue = SumAll(1, 2, 3, 4);
+        Console.WriteLine(retValue);
+
+    }
+
+}
