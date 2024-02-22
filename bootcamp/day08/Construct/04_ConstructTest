@@ -1,0 +1,32 @@
+using System;
+
+public class Monster
+{
+    private string? name;
+    private int atk;
+    private int hp;
+
+    public Monster(string name, int atk, int hp)
+    {
+        this.name = name;
+        this.atk = atk;
+        this.hp = hp;
+    }
+
+    public void Display()
+    {
+        Console.WriteLine($"이름은 {this.name}");
+        Console.WriteLine($"공격력은 {this.atk}");
+        Console.WriteLine($"에너지는 {this.hp}");
+    }
+
+}
+class ConstructTest
+{
+    static void Main()
+    {
+        Monster monster1 = new Monster("용가리", 100, 40);
+        monster1.Display();
+    }
+
+}
