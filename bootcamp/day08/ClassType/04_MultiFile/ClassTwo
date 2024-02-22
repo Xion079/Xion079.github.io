@@ -1,0 +1,11 @@
+public class ClassTwo
+{
+    public void Hello()
+    {
+        Console.WriteLine("또만나요");
+    }
+    public static void Hi()
+    {
+        Console.WriteLine("반갑습니다");
+    }
+}
