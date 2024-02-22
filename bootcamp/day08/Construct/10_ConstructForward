@@ -1,0 +1,24 @@
+using System;
+
+public class Lotte
+{
+    public Lotte() : this(1000) //생성자 포워드
+    {
+        Console.WriteLine($"상품 당첨");
+    }
+    public Lotte(int x)
+    {
+        Console.WriteLine($"{x} 당첨");
+    }
+}
+
+class ConstructForward
+{
+    static void Main()
+    {
+        Lotte lotte = new Lotte();
+        Lotte lotte1 = new Lotte(1000);
+
+    }
+
+}
