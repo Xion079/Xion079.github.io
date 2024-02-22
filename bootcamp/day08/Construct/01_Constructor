@@ -1,0 +1,26 @@
+using System;
+
+class ConstructDemo
+{
+    public ConstructDemo()
+    {
+        Console.WriteLine("Construct 클래스 생성자 호출");
+    }
+    // 생성자 호출 생성자랑 이름이 같아야함
+    // 
+    public void Show()
+    {
+        Console.WriteLine("Construct클래스 메서드 호출");
+    }
+}
+
+
+class Constructor
+{
+    static void Main()
+    {
+        ConstructDemo demo = new ConstructDemo();
+        //.Show();
+    }
+
+}
