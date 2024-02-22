@@ -1,0 +1,42 @@
+using System;
+
+class Flower
+{
+    //필드 + 메서드 = 맴버
+
+    //필드
+    public string? name;
+    public float price;
+    //메서드
+    public void ShowMessage() // 인스턴스 메서드
+    {
+        Console.WriteLine(this.name);
+        Console.WriteLine(this.price);
+    }
+    public static void DayOff() // 정적메서드
+    {
+        Console.WriteLine("이번 주 주말은 휴무");
+    }
+
+
+    class ClassType
+    {
+
+        static void Main()
+        {
+            Flower flower1 = new Flower();
+            flower1.name = "Rose";
+            flower1.price = 8000;
+            flower1.ShowMessage();
+            Console.WriteLine("------------------");
+            Flower flower2 = new Flower();
+            flower2.name = "Lily";
+            flower2.price = 7000;
+            flower2.ShowMessage();
+            Console.WriteLine("------------------");
+            Flower.DayOff();
+
+        }
+
+    }
+}
