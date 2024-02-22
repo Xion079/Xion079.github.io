@@ -1,0 +1,14 @@
+using System;
+
+class MultiFile
+{
+    static void Main()
+    {
+        ClassOne.Hi();  // 안녕하세요
+        ClassTwo.Hi();  // 반갑습니다
+
+        ClassTwo classTwo = new ClassTwo();
+        classTwo.Hello();   // 또만나요
+    }
+
+}
