@@ -1,0 +1,46 @@
+using System;
+using System.Diagnostics.Metrics;
+
+public class Flower
+{
+    private string? name;     //이거 둘은 인스턴스에 속해있지만
+    private decimal price;
+    private static int count; //정적메서드에 사용해서
+                              //클래스에 속해있음
+    public Flower(string? name, decimal price)
+    {
+        this.name = name;
+        this.price = price;
+        count++;
+    }
+
+    public void GetParams()
+    {
+        Console.WriteLine($"상품명:{this.name}");
+        Console.WriteLine($"가격:{this.price}");
+        Console.WriteLine("------------------------");
+    }
+
+    public static void Print()
+    {
+        
+        Console.WriteLine($"총 판매 갯수 = {count}");
+    }
+}
+
+class StructFlower
+{
+    static void Main()
+    {
+        Flower flower1 = new Flower("후리지아", 10_000m);
+        flower1.GetParams();
+
+        Flower flower2 = new Flower("백합", 30_000m);
+        flower2.GetParams();
+
+        Flower flower3 = new Flower("장미", 100_000m);
+        flower3.GetParams();
+
+        Flower.Print();
+    }
+}
