@@ -1,0 +1,29 @@
+using System;
+
+public class Cat
+{
+    private string? name;
+    private string? color;
+
+    public Cat(string? name, string? color)
+    {
+        this.name = name;
+        this.color = color;
+    }
+     
+    public void Meow()
+    {
+        Console.WriteLine($"{this.color},{this.name}:야옹");
+    }
+}
+
+class ConstructPartice
+{
+    static void Main()
+    {
+        Cat kitty = new Cat("키티", "하얀색");
+        kitty.Meow();
+        Cat nero = new Cat("네로", "검은색");
+        nero.Meow();
+    }
+}
