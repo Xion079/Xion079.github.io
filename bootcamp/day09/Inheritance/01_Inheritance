@@ -1,0 +1,32 @@
+using System;
+
+class Parent
+{
+    public void Show()
+    {
+        Console.WriteLine("[1] Parent class method call");
+    }
+}
+    class Child : Parent // 상속
+{   
+    public void Call()
+    {
+        Console.WriteLine("[2] Child class method call");
+    }
+}
+
+
+class Inheritance
+{
+    static void Main()
+    {
+        //Parent parent = new Parent();
+        //parent.Show();
+
+        Child child = new Child();
+        child.Show();
+        child.Call();
+
+    }
+
+}
