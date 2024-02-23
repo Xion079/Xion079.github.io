@@ -1,0 +1,41 @@
+using System;
+
+class Animal
+{
+    public void Eat()
+    {
+        Console.WriteLine($"[Animal]: 식사");
+    }
+}
+
+sealed class Cat : Animal
+{
+    public void Cry()
+    {
+        Console.WriteLine("야옹");
+    }
+
+}
+
+sealed class Dog : Animal
+{
+    public void Bark()
+    {
+        Console.WriteLine("멍");
+    }
+}
+
+
+class SealedClass
+{
+    static void Main()
+    {
+        Cat cat = new Cat();
+        cat.Cry();
+        cat.Eat();
+
+
+
+    }
+
+}
