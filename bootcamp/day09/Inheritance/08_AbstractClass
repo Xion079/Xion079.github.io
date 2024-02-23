@@ -1,0 +1,27 @@
+using System;
+
+public abstract class shape
+{
+    public abstract double GetArea();
+}
+
+public class Square : shape
+{
+    private double length;
+
+    public override double GetArea()
+    {
+        return length * length;
+        //throw new NotImplementedException();
+    }
+}
+
+
+class AbstractClass
+{
+    static void Main()
+    {
+        
+    }
+
+}
