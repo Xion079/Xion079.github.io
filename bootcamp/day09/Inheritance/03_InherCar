@@ -1,0 +1,44 @@
+using System;
+
+class Car
+{
+    public void Start()
+    {
+        Console.WriteLine("자동차 시동");
+    }
+}
+
+class Genesis : Car
+{
+    public string? Name { get; set; }
+
+    public void GO()
+    {
+        Console.WriteLine($"{Name} 출발");
+    }
+}
+
+class Grandeur : Car
+{
+    public string? Name { get; set; }
+
+    public void GO()
+    {
+        Console.WriteLine($"{Name} 출발");
+    }
+}
+
+class InherCar
+{
+    static void Main()
+    {
+        Genesis genesis = new Genesis { Name = "제네시스" };
+        genesis.Start();
+        genesis.GO();
+
+        Grandeur grandeur = new Grandeur { Name = "그랜저" };
+        genesis.Start();
+        genesis.GO();
+    }
+
+}
