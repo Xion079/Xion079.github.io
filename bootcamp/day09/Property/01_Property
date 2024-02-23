@@ -1,0 +1,30 @@
+using System;
+
+public class Flower
+{
+    private string? name;
+    private int price;
+    public void SetParams(string name, int price)
+    {
+        this.name = name;
+        this.price = price;
+    }
+
+    public void GetParams()
+    {
+        Console.WriteLine($"{this.name}, {this.price}");
+    }
+}
+
+class Property
+{
+    static void Main()
+    {
+        Flower flower1 = new Flower();
+        flower1.SetParams("장미", 100);
+        flower1.GetParams();
+
+
+    }
+
+}
