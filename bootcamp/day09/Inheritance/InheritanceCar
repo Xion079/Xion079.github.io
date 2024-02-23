@@ -1,0 +1,37 @@
+using System;
+
+class GrandCar
+{
+    public void Start()
+    {
+        Console.WriteLine("[1] 자동차 시동을 겁니다");
+    }
+}
+
+class Car:GrandCar
+{
+    public void Fuel()
+    {
+        Console.WriteLine("[2] 연료 주입");
+    }
+}
+
+class ChildCar:Car
+{
+    public void Go()
+    {
+        Console.WriteLine("[3] 자동차 출발");
+    }
+}
+
+class InheritanceCar
+{
+    static void Main()
+    {
+        ChildCar car = new ChildCar();
+        car.Start();
+        car.Fuel();
+        car.Go();
+    }
+
+}
