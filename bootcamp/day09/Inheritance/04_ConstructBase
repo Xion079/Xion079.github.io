@@ -1,0 +1,25 @@
+using System;
+
+class Parent
+{
+    public Parent(string message)
+    {
+        Console.WriteLine($"Parent: {message}");
+    }
+}
+
+class Child : Parent
+{
+    public Child(string message2) : base(message2) { }
+}
+
+class ConstructBase
+{
+    static void Main()
+    {
+        //Parent parent = new Parent("Hello world");
+
+        Child child = new Child("Hello World");
+    }
+
+}
