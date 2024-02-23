@@ -1,0 +1,19 @@
+using System;
+
+public class Flower()
+{
+    public string? Name {  get; set; }
+
+}
+
+
+class PropertyTest
+{
+    static void Main()
+    {
+        Flower flower1 = new Flower();
+        flower1.Name = "장미"; //set
+        Console.WriteLine(flower1.Name); //get
+    }
+
+}
