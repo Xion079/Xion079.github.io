@@ -1,0 +1,37 @@
+using System;
+
+class Car
+{
+    private bool key;
+
+    public Car(bool key)
+    {
+        this.key = key;
+    }
+
+    public void ShowStart()
+    {
+        Console.WriteLine($"시동 상태 : {this.key}");
+    }
+}
+
+class Genesis:Car
+{
+    public Genesis(bool key) : base(key) { }
+    public string? Name {  get; set; }
+}
+
+
+class ConstructBase2
+{
+    static void Main()
+    {
+        Genesis genesis = new Genesis(true);
+        genesis.ShowStart();
+        genesis.Name = "제네시스";
+        Console.WriteLine($"{genesis.Name}");
+
+
+    }
+
+}
