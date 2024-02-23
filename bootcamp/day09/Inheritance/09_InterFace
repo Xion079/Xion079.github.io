@@ -1,0 +1,34 @@
+using System;
+
+interface ICar
+{
+    void GO();
+}
+
+interface ICar2
+{
+    void Run();
+}
+
+class Car : ICar, ICar2
+{
+    public void GO()
+    {
+        Console.WriteLine("시동을 겁니다");
+    }
+    public void Run()
+    {
+        Console.WriteLine("자동차 출발");
+    }
+}
+
+class Interface
+{
+    static void Main()
+    {
+        Car car = new Car();
+        car.GO();
+        car.Run();
+    }
+
+}
