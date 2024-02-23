@@ -1,0 +1,33 @@
+using System;
+
+class Car
+{
+    public virtual void Strat()
+    {
+        Console.WriteLine("시동을 겁니다");
+    }
+}
+
+class Morning : Car
+{
+    public void Go()
+    {
+        Console.WriteLine("출발");
+    }
+    public override void Strat()
+    {
+        Console.WriteLine("엔진 시작");
+    }
+
+}
+
+
+class VirtualOverride
+{
+    static void Main()
+    {
+        Morning morning = new Morning();
+        morning.Strat();
+    }
+
+}
