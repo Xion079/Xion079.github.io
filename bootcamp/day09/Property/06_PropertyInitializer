@@ -1,0 +1,41 @@
+using System;
+
+class Person
+{
+    public string? Name { get; set; }
+    public int Age { get; set; }
+
+    public Person()
+    {
+
+    }
+
+    public Person(string name, int age)
+    {
+        Name = name;
+        Age = age;
+    }
+
+}
+
+class PropertyInitializer
+{
+    static void Main()
+    {
+        Person person1 = new Person();
+        person1.Name = "이순신";
+        person1.Age = 100;
+        Console.WriteLine($"{person1.Name} - {person1.Age}");
+        
+        Person person2 = new Person("홍길동", 20);
+        Console.WriteLine($"{person2.Name} - {person2.Age}");
+
+        //속성 초기화 사용
+
+        Person person3 = new Person { Name = "임꺽정", Age = 40 };
+        Console.WriteLine($"{person3.Name} - {person3.Age}");
+
+
+    }
+
+}
