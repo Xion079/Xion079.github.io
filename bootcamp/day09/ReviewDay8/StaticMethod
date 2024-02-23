@@ -1,0 +1,41 @@
+using System;
+
+public class Flower
+{
+    private readonly string? name;
+    private int price;
+    private static int count;
+
+    public Flower()
+    {
+        Console.WriteLine("기본 생성자 호출");
+    }
+
+    public Flower(string? name, int price)
+    {
+        this.name = name;
+        this.price = price;
+        count++;
+        Console.WriteLine($"{this.name}생성, {this.price} - 생성 개수 {count}");
+    }
+
+    public static void Count()
+    {
+        Console.WriteLine($"총 생성 갯수:{count}");
+    }
+
+
+}
+
+class StaticMethod
+{
+    static void Main()
+    {
+        Flower flower1 = new Flower("장미", 10000);
+        Flower flower2 = new Flower("백합", 12000);
+        Flower flower3 = new Flower();
+        Flower.Count();
+
+    }
+
+}
