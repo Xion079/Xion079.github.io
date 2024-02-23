@@ -1,0 +1,32 @@
+using System;
+
+public class Car()
+{
+    private string? color;
+
+    public Car()
+    {
+        this.color = "Red";
+    }
+
+    public string? Color
+    {
+        get => this.color;
+        set => this.color = value;
+    }
+
+}
+
+
+class PropertyTest2
+{
+    static void Main()
+    {
+        Car car = new Car();
+        Console.WriteLine(car.Color);
+
+        car.Color = "blue";
+        Console.WriteLine(car.Color);
+    }
+
+}
