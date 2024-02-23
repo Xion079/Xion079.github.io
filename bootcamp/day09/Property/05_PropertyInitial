@@ -1,0 +1,23 @@
+using System;
+using System.Drawing;
+using System.Xml.Linq;
+
+public class Flower
+{
+    public string? Name { get; set; }
+    public string? Color { get; set; }
+
+}
+
+class PropertyInitial
+{
+    static void Main()
+    {
+        Flower flower1 = new Flower { Name = "장미", Color = "Red" }; //이렇게 바꿀수있음
+        //flower1.Name = "장미";
+        //flower1.Color = "Red";
+
+        Console.WriteLine($"{flower1.Name}, {flower1.Color}");
+    }
+
+}
