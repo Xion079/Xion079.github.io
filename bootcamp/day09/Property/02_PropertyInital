@@ -1,0 +1,30 @@
+using System;
+
+public class Flower
+{
+    public string? Color { get; set; }   //Property
+    public string? name;                //Field
+
+    //private string? color;
+
+    //// Java style
+    //// Property라고 부름
+    //public string Color
+    //{
+    //    get { return color; }
+    //    set { color = value; }
+    //}
+
+    //주석 처리 된걸 요약하면 맨 윗줄 Property로 바뀜
+}
+
+class PropertyInitial
+{
+    static void Main()
+    {
+        Flower flower1 = new Flower();
+        flower1.Color = "red";
+        Console.WriteLine($"{flower1.Color}");
+    }
+
+}
